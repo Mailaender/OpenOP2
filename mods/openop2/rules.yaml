@@ -1,0 +1,39 @@
+World:
+	TerrainRenderer:
+	AlwaysVisible:
+	ActorMap:
+	ScreenMap:
+	LoadWidgetAtGameStart:
+		ShellmapRoot: MENU_BACKGROUND
+	Faction@0:
+		Name: Example
+		InternalName: example
+		Side: Example
+		Selectable: False
+	PaletteFromPng@Terrain:
+		Name: terrain
+		Filename: bits/blank.png
+	PaletteFromPng@ColorPicker:
+		Name: colorpicker
+		Filename: bits/blank.png
+	Selection:
+	MusicPlaylist:
+
+DummyActor:
+	BodyOrientation:
+	HitShape:
+	AlwaysVisible:
+
+Player:
+	AlwaysVisible:
+	TechTree:
+	PlaceBuilding:
+	SupportPowerManager:
+	PlayerResources:
+	DeveloperMode:
+	Shroud:
+	FrozenActorLayer:
+
+EditorPlayer:
+	AlwaysVisible:
+	Shroud:

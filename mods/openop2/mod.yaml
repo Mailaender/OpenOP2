@@ -1,0 +1,194 @@
+Metadata:
+	Title: Outpost 2
+	Version: {DEV_VERSION}
+	Website: https://github.com/OpenOP2
+
+Packages:
+	~^Content/openop2
+	.
+	$openop2: openop2
+	./mods/common: common
+	./mods/cnc: cnc
+	./mods/modcontent: modcontent
+	openop2|uibits
+
+MapFolders:
+	openop2|maps: System
+	~^maps/openop2/{DEV_VERSION}: User
+
+Rules:
+	openop2|rules.yaml
+
+Sequences:
+	openop2|sequences.yaml
+
+TileSets:
+	openop2|tileset.yaml
+
+Weapons:
+
+Cursors:
+	modcontent|cursors.yaml
+
+Chrome:
+	cnc|chrome.yaml
+
+Assemblies:
+	common|OpenRA.Mods.Common.dll
+	common|OpenRA.Mods.Cnc.dll
+
+ChromeLayout:
+	cnc|chrome/mainmenu.yaml
+	cnc|chrome/mainmenu-prompts.yaml
+	cnc|chrome/playerprofile.yaml
+	cnc|chrome/multiplayer-browser.yaml
+	cnc|chrome/multiplayer-browserpanels.yaml
+	cnc|chrome/multiplayer-createserver.yaml
+	cnc|chrome/multiplayer-directconnect.yaml
+	cnc|chrome/lobby.yaml
+	cnc|chrome/lobby-mappreview.yaml
+	cnc|chrome/lobby-players.yaml
+	cnc|chrome/lobby-options.yaml
+	cnc|chrome/lobby-music.yaml
+	cnc|chrome/lobby-servers.yaml
+	cnc|chrome/lobby-kickdialogs.yaml
+	cnc|chrome/connection.yaml
+	cnc|chrome/color-picker.yaml
+	cnc|chrome/mapchooser.yaml
+	cnc|chrome/replaybrowser.yaml
+	cnc|chrome/gamesave-browser.yaml
+	cnc|chrome/gamesave-loading.yaml
+	cnc|chrome/ingame.yaml
+	cnc|chrome/ingame-chat.yaml
+	cnc|chrome/ingame-menu.yaml
+	cnc|chrome/ingame-debug.yaml
+	cnc|chrome/ingame-infochat.yaml
+	cnc|chrome/ingame-info.yaml
+	cnc|chrome/ingame-infobriefing.yaml
+	cnc|chrome/ingame-infoscripterror.yaml
+	cnc|chrome/ingame-infoobjectives.yaml
+	cnc|chrome/ingame-infostats.yaml
+	cnc|chrome/ingame-debuginfo.yaml
+	cnc|chrome/music.yaml
+	cnc|chrome/settings.yaml
+	cnc|chrome/credits.yaml
+	cnc|chrome/dialogs.yaml
+	cnc|chrome/tooltips.yaml
+	cnc|chrome/assetbrowser.yaml
+	cnc|chrome/missionbrowser.yaml
+	cnc|chrome/editor.yaml
+
+Voices:
+
+Music:
+	openop2|audio/music.yaml
+
+Notifications:
+	openop2|audio/notifications.yaml
+
+Translations:
+	openop2|languages/english.yaml
+
+Hotkeys:
+	common|hotkeys/game.yaml
+	common|hotkeys/observer.yaml
+	common|hotkeys/production-common.yaml
+	common|hotkeys/production-peractor.yaml
+	common|hotkeys/supportpowers.yaml
+	common|hotkeys/viewport.yaml
+	openop2|hotkeys.yaml
+
+LoadScreen: CncLoadScreen
+	Image: openop2|uibits/chrome.png
+	Image2x: openop2|uibits/chrome-2x.png
+	Image3x: openop2|uibits/chrome-3x.png
+	Text: Loading
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+	LobbySettingsNotification
+
+ChromeMetrics:
+	common|metrics.yaml
+	openop2|metrics.yaml
+
+Fonts:
+	Tiny:
+		Font: common|FreeSans.ttf
+		Size: 10
+		Ascender: 8
+	TinyBold:
+		Font: common|FreeSansBold.ttf
+		Size: 10
+		Ascender: 8
+	Small:
+		Font: common|FreeSans.ttf
+		Size: 12
+		Ascender: 9
+	Regular:
+		Font: common|FreeSans.ttf
+		Size: 14
+		Ascender: 11
+	Bold:
+		Font: common|FreeSansBold.ttf
+		Size: 14
+		Ascender: 11
+	MediumBold:
+		Font: common|FreeSansBold.ttf
+		Size: 18
+		Ascender: 14
+	BigBold:
+		Font: common|FreeSansBold.ttf
+		Size: 24
+		Ascender: 18
+	Title:
+		Font: common|FreeSansBold.ttf
+		Size: 32
+		Ascender: 24
+
+Missions:
+
+MapGrid:
+	TileSize: 24,24
+	Type: Rectangular
+
+SupportsMapsFrom: cnc
+
+SoundFormats: Wav
+
+SpriteFormats: PngSheet
+
+SpriteSequenceFormat: DefaultSpriteSequence
+
+ModelSequenceFormat: PlaceholderModelSequence
+
+AssetBrowser:
+	SupportedExtensions: .wav
+
+GameSpeeds:
+	slowest:
+		Name: Slowest
+		Timestep: 80
+		OrderLatency: 2
+	slower:
+		Name: Slower
+		Timestep: 50
+		OrderLatency: 3
+	default:
+		Name: Normal
+		Timestep: 40
+		OrderLatency: 3
+	fast:
+		Name: Fast
+		Timestep: 35
+		OrderLatency: 4
+	faster:
+		Name: Faster
+		Timestep: 30
+		OrderLatency: 4
+	fastest:
+		Name: Fastest
+		Timestep: 20
+		OrderLatency: 6
