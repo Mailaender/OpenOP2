@@ -18,6 +18,14 @@ World:
 		Filename: bits/blank.png
 	Selection:
 	MusicPlaylist:
+	PaletteFromPrtFile@0:
+		Name: 0
+		Number: 0
+		Filename: op2_art.prt
+	PaletteFromPrtFile@1:
+		Name: 1
+		Number: 1
+		Filename: op2_art.prt
 
 DummyActor:
 	BodyOrientation:
