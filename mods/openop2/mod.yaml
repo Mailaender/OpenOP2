@@ -3,6 +3,8 @@ Metadata:
 	Version: {DEV_VERSION}
 	Website: https://github.com/OpenOP2
 
+PackageFormats: VolFile
+
 Packages:
 	~^Content/openop2
 	.
@@ -11,6 +13,11 @@ Packages:
 	./mods/cnc: cnc
 	./mods/modcontent: modcontent
 	openop2|uibits
+	~MAPS.VOL
+	~SHEETS.VOL
+	~SOUND.VOL
+	~STORY.VOL
+	~VOICES.VOL
 
 MapFolders:
 	openop2|maps: System
@@ -34,6 +41,7 @@ Chrome:
 	cnc|chrome.yaml
 
 Assemblies:
+	openop2|OpenRA.Mods.OpenOP2.dll
 	common|OpenRA.Mods.Common.dll
 	common|OpenRA.Mods.Cnc.dll
 
