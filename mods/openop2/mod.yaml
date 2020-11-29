@@ -18,7 +18,6 @@ Packages:
 	~SOUND.VOL
 	~STORY.VOL
 	~VOICES.VOL
-	~art.vol
 
 MapFolders:
 	openop2|maps: System
