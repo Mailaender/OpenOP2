@@ -99,7 +99,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 					framePalettes.Add(paletteData.Select(d => (uint)d.ToArgb()).ToArray());
 				}
 
-				return new ImmutablePalette(framePalettes[Number]);
+				return new ImmutablePalette(Enumerable.Range(0, Palette.Size).Select(i => (i == TransparentIndex) ? 0 : framePalettes[Number][i]));
 			}
 		}
 	}
