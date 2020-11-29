@@ -109,19 +109,15 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				var palette = prt.ReadUInt16();
 				palettes.Add(f, framePalettes[palette]);
 
+				var dataSize = new Size((int)paddedWidth, (int)height);
 				var frameSize = new Size((int)width, (int)height);
 
 				s.Seek(dataStart + dataOffset, SeekOrigin.Begin);
 				var data = s.ReadBytes((int)(paddedWidth * height));
 
-				if (type == 4 || type == 5)
-				{
-					// TODO 1 bpp else 8
-				}
-
 				frames[f] = new BitmapSpriteFrame()
 				{
-					Size = frameSize,
+					Size = dataSize,
 					FrameSize = frameSize,
 					Data = data,
 					Type = SpriteFrameType.Indexed
