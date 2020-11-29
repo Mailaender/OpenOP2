@@ -89,9 +89,9 @@ namespace OpenRA.Mods.OpenOP2.Traits
 					var paletteData = new Color[colors];
 					for (var c = 0; c < colors; c++)
 					{
-						var blue = s.ReadByte();
-						var green = s.ReadByte();
 						var red = s.ReadByte();
+						var green = s.ReadByte();
+						var blue = s.ReadByte();
 						paletteData[c] = Color.FromArgb(red, green, blue);
 						var reserved = s.ReadByte();
 					}
