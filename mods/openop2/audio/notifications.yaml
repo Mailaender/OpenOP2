@@ -7,3 +7,4 @@ Sounds:
 	DefaultVariant: .wav
 	Notifications:
 		ClickSound:
+		ClickDisabledSound:
